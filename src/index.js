@@ -46,7 +46,7 @@ const App2 = () => {
 root.render(
   // <React.StrictMode>
     <App2 />
-    {/* <FunctionComponent /> */}
+    // {/* <FunctionComponent /> */}
   // </React.StrictMode>
 );
 
