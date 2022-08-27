@@ -93,7 +93,7 @@ export const MessageList = () => {
           ...messageList,
           { author: "Bot", message: "Hello from Bot", date: new Date() },
         ]);
-      }, 2500);
+      }, 1000);
 
       return () => {
         clearInterval(timerId);
