@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import classNames from "classNames";
 import styles from "./message.module.css";
 
 export function Message({ message }) {
