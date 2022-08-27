@@ -15,7 +15,7 @@ const Message2 = ({ message }) => {
   );
 };
 
-const message = "Hello, react!!";
+const message = "Hello, react!!!";
 
 const App2 = () => {
   return <Message2 message={message} />;
