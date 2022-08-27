@@ -44,7 +44,8 @@ export const MessageList = () => {
     <>
       <div>
         {messageList.map((message) => (
-          <Message message={message} />))}
+          <Message message={message} />
+          ))}
       </div>
 
       <button onClick={sendMessage}>Send</button>
