@@ -6,39 +6,39 @@ export const MessageList = () => {
   const [value, setValue] = useState("");
 
 
-//   const sendMessage = () => {
-//     if (value) {
-//       setMessageList([
-//         ...messageList,
-//         { author: "userName", message: value },
-//       ]);
-//       setValue("")
-//     }
-//   };
+  const sendMessage = () => {
+    if (value) {
+      setMessageList([
+        ...messageList,
+        { author: "userName", message: value },
+      ]);
+      setValue("");
+    }
+  };
 
-//   const handlePressInput = ({ code }) => {
-//     if (code === "Enter") {
-//       sendMessage();
-//     }
-//   };
+  const handlePressInput = ({ code }) => {
+    if (code === "Enter") {
+      sendMessage();
+    }
+  };
 
-//   useEffect(() => {
-//     const lastMessage = messageList[messageList.length - 1];
-//     let timeId = null;
+  useEffect(() => {
+    const lastMessage = messageList[messageList.length - 1];
+    let timeId = null;
 
-//     if (messageList.length && messageList.author === "userName") {
-//       timeId = setTimeout(() => {
-//         setMessageList([
-//           ...MessageList,
-//           { autor: "Bot", message: "hello from Bot" }
-//         ]);
-//       }, 2500);
+    if (messageList.length && lastMessage.author === "userName") {
+      timeId = setTimeout(() => {
+        setMessageList([
+          ...MessageList,
+          { autor: "Bot", message: "hello from Bot" }
+        ]);
+      }, 2500);
 
-//       return () => {
-//         clearInterval(timeId);
-//       };
-//     }
-//   }, [messageList]);
+      return () => {
+        clearInterval(timeId);
+      };
+    }
+  }, [messageList]);
 
   return (
     <>
