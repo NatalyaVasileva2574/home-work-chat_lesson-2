@@ -11,13 +11,13 @@ import {MessageList} from './components';
 const Message2 = ({ message }) => {
   return (
     <div className={styles.test}>
-      <h1 className={styles.fontSizeNameClassComponent}>Message2</h1>
+      <h1 className={styles.fontSizeNameClassComponent}>Message2,1</h1>
       <p className={styles.fontSizeText}>{message}</p>
     </div>
   );
 };
 
-const message = "Hello, react!";
+const message = "Hello, react!?";
 
 const App2 = () => {
   return <Message2 message={message} />;
