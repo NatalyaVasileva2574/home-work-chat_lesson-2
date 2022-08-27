@@ -22,25 +22,25 @@ const App2 = () => {
 
 
 
-function FunctionComponent() {
-  const [messageList, setMessageList] = useState([
-    { text: "textMessage", author: "userName" }]);
+// function FunctionComponent() {
+//   const [messageList, setMessageList] = useState([
+//     { text: "textMessage", author: "userName" }]);
 
-  const [value, setValue] = useState("");
+//   const [value, setValue] = useState("");
 
-  return (
-    <div>
-      <input className={styles.formPadding} value={value} onChange={e => setValue(e.target.value)} />
-    </div >
-  );
-}
+//   return (
+//     <div>
+//       <input className={styles.formPadding} value={value} onChange={e => setValue(e.target.value)} />
+//     </div >
+//   );
+// }
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App2 />
-    <FunctionComponent />
+    {/* <FunctionComponent /> */}
   </React.StrictMode>
 );
 
