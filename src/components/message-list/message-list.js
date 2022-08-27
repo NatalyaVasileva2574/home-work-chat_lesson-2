@@ -12,7 +12,7 @@
 //         ...messageList,
 //         { author: "userName", message: value },
 //       ]);
-//       setValue("")
+//       setValue("");
 //     }
 //   };
 
@@ -26,7 +26,7 @@
 //     const lastMessage = messageList[messageList.length - 1];
 //     let timeId = null;
 
-//     if (messageList.length && messageList.author === "userName") {
+//     if (messageList.length && lastMessage.author === "userName") {
 //       timeId = setTimeout(() => {
 //         setMessageList([
 //           ...MessageList,
@@ -44,11 +44,12 @@
 //     <>
 //       <div>
 //         {messageList.map((message) => (
-//           <Message message={message} />))}
+//           <Message message={message} />
+//           ))}
 //       </div>
 
 //       <button onClick={sendMessage}>Send</button>
-//       <input fullwidth
+//       <input fullWidth
 //         placeholder="введите текст"
 //         value={value}
 //         onChange={(e) => setValue(e.target.value)}
@@ -57,6 +58,7 @@
 //     </>
 //   );
 // };
+
 
 import React, { useState, useEffect } from "react";
 import { Message } from "./message";
@@ -91,7 +93,7 @@ export const MessageList = () => {
           ...messageList,
           { author: "Bot", message: "Hello from Bot", date: new Date() },
         ]);
-      }, 2500);
+      }, 1000);
 
       return () => {
         clearInterval(timerId);
