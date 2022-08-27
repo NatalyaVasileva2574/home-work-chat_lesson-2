@@ -6,16 +6,16 @@ import ReactDOM from 'react-dom/client';
 import {MessageList} from './components';
 
 
-// const Message2 = ({ message }) => {
-//   return (
-//     <div className={styles.test}>
-//       <h1 className={styles.fontSizeNameClassComponent}>Message</h1>
-//       <p className={styles.fontSizeText}>{message}</p>
-//     </div>
-//   );
-// };
+const Message2 = ({ message }) => {
+  return (
+    <div className={styles.test}>
+      <h1 className={styles.fontSizeNameClassComponent}>Message</h1>
+      <p className={styles.fontSizeText}>{message}</p>
+    </div>
+  );
+};
 
-// const message = "Hello, react!!!";
+const message = "Hello, react!!!";
 
 // const App2 = () => {
 //   return <Message2 message={message} />;
@@ -39,13 +39,14 @@ import {MessageList} from './components';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const App2 = () => {
+const App = () => {
   return <MessageList />;
 };
 
 root.render(
   // <React.StrictMode>
-    <App2 />
+    // <App2 />
+    <App />
     // {/* <FunctionComponent /> */}
   // </React.StrictMode>
 );
