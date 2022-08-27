@@ -1,8 +1,8 @@
 // import React from 'react';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import { FunctionComponent, ClassComponent } from './example'
-import styles from "./index.module.css";
+// import { FunctionComponent, ClassComponent } from './example'
+// import styles from "./index.module.css";
 import {MessageList} from './components';
 
 
@@ -15,7 +15,7 @@ import {MessageList} from './components';
 //   );
 // };
 
-const message = "Hello, react!!!";
+// const message = "Hello, react!!!";
 
 // const App2 = () => {
 //   return <Message2 message={message} />;
